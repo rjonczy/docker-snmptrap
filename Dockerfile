@@ -1,5 +1,5 @@
 FROM alpine:3.8
-MAINTAINER David Chidell (dchidell@cisco.com)
+LABEL David Chidell (dchidell@cisco.com)
 
 RUN apk --no-cache add net-snmp
 ADD mibs.tar.gz /mibs/
