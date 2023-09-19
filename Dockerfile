@@ -1,5 +1,5 @@
-FROM alpine:3.18
-LABEL David Chidell (dchidell@cisco.com)
+FROM ubuntu
+LABEL Robert Jonczy (robert.jonczy@gmail.com)
 
 RUN apk --no-cache add net-snmp
 ADD snmptrapd.conf /etc/snmp/snmptrapd.conf
