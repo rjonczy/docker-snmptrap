@@ -1,7 +1,7 @@
 FROM ubuntu
 LABEL Robert Jonczy (robert.jonczy@gmail.com)
 
-RUN apk --no-cache add net-snmp
+RUN apt-get update && apt-get install iputils-ping snmptrapd -y
 ADD snmptrapd.conf /etc/snmp/snmptrapd.conf
 
 EXPOSE 1062
