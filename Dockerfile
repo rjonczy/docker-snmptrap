@@ -7,5 +7,5 @@ ADD snmptrapd.conf /etc/snmp/snmptrapd.conf
 
 EXPOSE 162
 ENTRYPOINT [ "snmptrapd" ]
-CMD ["-c", "/etc/snmp/snmptrapd.conf", "-n","-L","o","-f","-M","/mibs","-m","ALL"]
+CMD ["-c", "/etc/snmp/snmptrapd.conf", "-n", "-L", "o", "-f", "-M", "/mibs", "-m", "ALL"]
 
