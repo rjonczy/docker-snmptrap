@@ -8,3 +8,4 @@ ADD snmptrapd.conf /etc/snmp/snmptrapd.conf
 EXPOSE 162
 ENTRYPOINT [ "snmptrapd" ]
 CMD ["-n","-L","o","-f","-M","/mibs","-m","ALL"]
+

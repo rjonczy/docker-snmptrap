@@ -4,7 +4,7 @@ name: Build Docker Image on PR
 on:
   push:
     paths:
-      - "**docker**"
+      - "Dockerfile"
       - "**.sh"
       - "**.bash"
 
